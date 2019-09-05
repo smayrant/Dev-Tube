@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import videosReducer from "./videosReducer";
+import homepageJSReducer from "./homepageVideosReducers/homepageJSReducer";
+import homepageJavaReducer from "./homepageVideosReducers/homepageJavaReducer";
 
 const rootReducer = combineReducers({
-	videos: videosReducer
+	jsVideos: homepageJSReducer,
+	javaVideos: homepageJavaReducer
 });
 
 export default rootReducer;
